@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<AssemblyName>MOD_NAME</AssemblyName>
+		<AssemblyName>DvFullBrake</AssemblyName>
 		<TargetFramework>net48</TargetFramework>
 		<LangVersion>latest</LangVersion>
 		<Nullable>enable</Nullable>
@@ -10,6 +10,8 @@
 	<!-- Derail Valley -->
 	<ItemGroup>
 		<Reference Include="Assembly-CSharp"/>
+		<Reference Include="DV.Interaction"/>
+		<Reference Include="DV.BrakeSystem"/>
 	</ItemGroup>
 
 	<!-- Unity -->
