@@ -64,9 +64,10 @@ public static class Main
 			bool isApplyingBrakes = keyMap.TryGetValue(__instance.scrollUpKey, out applyBrakeKeys) && applyBrakeKeys.IsDown();
 			KeyCode[] releaseBrakeKeys;
 			bool isReleasingBrakes = keyMap.TryGetValue(__instance.scrollDownKey, out releaseBrakeKeys) && releaseBrakeKeys.IsDown();
-			KeyCode[] fullApplyBrakeKeys;
-			bool isFullApplying = keyMap.TryGetValue(KeyBindingsPatches.FullActivateBrake, out fullApplyBrakeKeys) && fullApplyBrakeKeys.IsDown();
 
+			// KeyCode[] fullApplyBrakeKeys;
+			// bool isFullApplying = keyMap.TryGetValue(KeyBindingsPatches.FullActivateBrake, out fullApplyBrakeKeys) && fullApplyBrakeKeys.IsDown();
+			bool isFullApplying = KeyCode.RightControl.IsPressed();
 			if (!isFullApplying)
 			{
 				return KEEP_ORIGINAL;
@@ -137,8 +138,9 @@ public static class Main
 			[HarmonyArgument(0)] float factor
 		)
 		{
-			KeyCode[] fullApplyBrakeKeys;
-			bool isFullApplying = KeyBindings.keyTypeToKeysMap.TryGetValue(KeyBindingsPatches.FullActivateBrake, out fullApplyBrakeKeys) && fullApplyBrakeKeys.IsDown();
+			// KeyCode[] fullApplyBrakeKeys;
+			// bool isFullApplying = KeyBindings.keyTypeToKeysMap.TryGetValue(KeyBindingsPatches.FullActivateBrake, out fullApplyBrakeKeys) && fullApplyBrakeKeys.IsDown();
+			bool isFullApplying = KeyCode.RightControl.IsPressed();
 			if (!isFullApplying)
 			{
 				return KEEP_ORIGINAL;
@@ -176,8 +178,9 @@ public static class Main
 			[HarmonyArgument(0)] float factor
 		)
 		{
-			KeyCode[] fullApplyBrakeKeys;
-			bool isFullApplying = KeyBindings.keyTypeToKeysMap.TryGetValue(KeyBindingsPatches.FullActivateBrake, out fullApplyBrakeKeys) && fullApplyBrakeKeys.IsDown();
+			// KeyCode[] fullApplyBrakeKeys;
+			// bool isFullApplying = KeyBindings.keyTypeToKeysMap.TryGetValue(KeyBindingsPatches.FullActivateBrake, out fullApplyBrakeKeys) && fullApplyBrakeKeys.IsDown();
+			bool isFullApplying = KeyCode.RightControl.IsPressed();
 			if (!isFullApplying)
 			{
 				return KEEP_ORIGINAL;
@@ -193,6 +196,7 @@ public static class Main
 	}
 
 	// TODO: make the key configurable
+	/*
 
 	class KeyBindingsPatches
 	{
@@ -301,9 +305,5 @@ public static class Main
 			}
 		}
 	}
-
-
-
-
+	*/
 }
-
