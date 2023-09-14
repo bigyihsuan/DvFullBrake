@@ -2,8 +2,8 @@
 	"Releases": [
 		{
 			"Id": "DvFullBrake",
-			"Version": "0.0.1",
-			"DownloadUrl": "https://github.com/bigyihsuan/DvFullBrake/releases/download/TAG/FILE_NAME.zip"
+			"Version": "1.0.0",
+			"DownloadUrl": "https://github.com/bigyihsuan/DvFullBrake/releases/download/1.0.0/DvFullBrake_v1.0.0.zip"
 		}
 	]
 }

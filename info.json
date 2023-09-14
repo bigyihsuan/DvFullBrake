@@ -2,7 +2,7 @@
   "Id": "DvFullBrake",
   "DisplayName": "DvFullBrake",
   "Author": "bigyihsuan",
-  "Version": "0.0.1",
+  "Version": "1.0.0",
   "AssemblyName": "DvFullBrake.dll",
   "EntryMethod": "DvFullBrake.Main.Load"
 }
